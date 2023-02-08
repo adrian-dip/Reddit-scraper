@@ -4,7 +4,7 @@
 
 This scraper uses data from the Cornell Convokit corpus (2005-2019). My own experience shows that classifiers and generators trained using this data work perfectly as of 2022. 
 
-If you need data from the last 3 years, you will need to use `snscrape` and `requests`. I will add this functionality when I have time. 
+If you need data from the last 3 years, you will need to use `snscrape` and `requests`. I will add this functionality later when I have more free time. 
 
 Still, consider using this script for old data as it is several orders of magnitudes faster than scraping from scratch and can give you basic statistics to organize your scraping effort.  
 
