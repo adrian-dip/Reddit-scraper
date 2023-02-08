@@ -46,7 +46,7 @@ Your computer must be able to execute Bash commands using Python. If you use Win
 
 #### Notice regarding optimization
 
-My computer only has 48 GB of RAM, so I had to compromise speed and do things iteratively. The script can parse several TB of data in a few hours, but if you have more RAM than I do, there are ways to speed up the process. 
+My computer only has 48 GB of RAM, so I had to compromise speed and do things iteratively. The script can parse several TB of data in a few hours, but if you have a lot of RAM, there are ways to speed up the process. 
 
 #### My own experience with this data
 
