@@ -38,7 +38,7 @@ Get the full list of subreddits ordered by size. The file in this repo has the f
 
 #### Notice regarding the script
 
-The purpose of this script is to parse a large number of Reddit comments. If you are interested in a single subreddit, conversational dynamics, or qualitative analysis, consider using the original Convokit library, which is prettier and has more functionalities: https://convokit.cornell.edu/documentation/
+The purpose of this script is to parse a large number of subreddits. If you are interested in a single subreddit, conversational dynamics, or qualitative analysis, consider using the original Convokit library, which is prettier and has more functionalities but does not scale well: https://convokit.cornell.edu/documentation/
 
 #### Notice regarding your OS
 
