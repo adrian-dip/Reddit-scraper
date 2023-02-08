@@ -1,5 +1,13 @@
 # Reddit scraper
 
+#### Important notice regarding the data and model decay
+
+This scraper uses data from the Cornell Convokit corpus (2005-2019). My own experience shows that classifiers and generators trained using this data work perfectly as of 2022. 
+
+If you need data from the last 3 years, you will need to use `snscrape` and `requests`. I will add this functionality when I have time. 
+
+Still, consider using this script for old data as it is several orders of magnitudes faster than scraping from scratch and can give you basic statistics to organize your scraping effort.  
+
 ### engine.py
 
 ```
@@ -26,25 +34,17 @@ Download and parse JSON data using the constraints laid out above. Outputs a com
 
 Get the full list of subreddits ordered by size. The file in this repo has the first 100,000.
 
-### Important Notices
+### Other Notices
 
-#### Important notice regarding the data and model decay
-
-This scraper uses data from the Cornell Convokit corpus (2005-2019). My own experience shows that classifiers and generators trained using this data work perfectly as of 2022. 
-
-If you need data from the last 3 years, you will need to use `snscrape` and `requests`. I will add this functionality when I have time. 
-
-Still, consider using this script for old data as it is several orders of magnitudes faster than scraping from scratch and can give you basic statistics to organize your scraping effort.  
-
-#### Important notice regarding the script
+#### Notice regarding the script
 
 The purpose of this script is to parse a large number of Reddit comments. If you are interested in a single subreddit, conversational dynamics, or qualitative analysis, consider using the original Convokit library, which is prettier and has more functionalities: https://convokit.cornell.edu/documentation/
 
-#### Important notice regarding your OS
+#### Notice regarding your OS
 
 Your computer must be able to execute Bash commands using Python. If you use Windows, please use WSL or see https://stackoverflow.com/questions/58402900/how-to-run-bash-commands-using-subprocess-run-on-windows
 
-#### Important notice regarding optimization
+#### Notice regarding optimization
 
 My computer only has 48 GB of RAM, so I had to compromise speed and do things iteratively. The script can parse several TB of data in a few hours, but if you have more RAM than I do, there are ways to speed up the process. 
 
