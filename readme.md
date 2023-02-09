@@ -17,7 +17,7 @@ if __name__ == '__main__':
     engine.get_reddit_dfs(subreddits=[0,200], number_children=5, max_comments_per_subreddit=1000000)
 
 ```
-#### function get_reddit_dfs
+#### *function* get_reddit_dfs
 
 - *subreddits* (list): Range of subreddits to parse (all existing subreddits ordered by size). `[0, 10]` gets the top 10. Alternatively, list of `int` pointing to subreddits per their index number in link_df.csv (e.g., `[1, 3, 6, 19, 53, 23, 78]`)
 - *top_OP_denominator* (int): Calculate which original posts to keep based on upvotes. 2 means top 1/2 (or top 50%), 4 means top 1/4 (or top 25%), and so on. This is useful as most parent posts have no content or child comments. If you want to keep the worst posts, use a negative number in the function.
